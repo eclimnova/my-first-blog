@@ -9,7 +9,6 @@
         <header>
             <h1><a href="/">Climnova Blog</a></h1>
         </header>
-
         {% for post in posts %}
             <article>
                 <time>published: {{ post.published_date }}</time>
@@ -17,6 +16,5 @@
                 <p>{{ post.text|linebreaksbr }}</p>
             </article>
         {% endfor %}
-
     </body>
 </html>
